@@ -10,9 +10,9 @@ namespace Practica_2
     {
         static void Main(string[] args)
         {
-            string mensaje;
-            Console.WriteLine("Ingrese la cadena");
-            mensaje = Console.ReadLine();
+            string expresion;
+            Console.WriteLine("Ingrese la expresión regular");
+            expresion = Console.ReadLine();
         }
     }
 }

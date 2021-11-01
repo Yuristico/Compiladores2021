@@ -13,6 +13,9 @@ namespace Practica_2
             string expresion;
             Console.WriteLine("Ingrese la expresión regular");
             expresion = Console.ReadLine();
+            Thompson thompson = new Thompson();
+            thompson.expresion = expresion;
+
         }
     }
 }

@@ -11,11 +11,16 @@ namespace Practica_2
         static void Main(string[] args)
         {
             string expresion;
-            Console.WriteLine("Ingrese la expresión regular");
+            Console.WriteLine("Ingrese la expresión regular.\nInstrucciones: " +
+                "Alfabeto ['a','z'] & E para epsilon \n* para cerradura de Kleene " +
+                "\nelementos sin nada entre ellos se considera concatenacion " +
+                "\n+ para union");
             expresion = Console.ReadLine();
             Thompson thompson = new Thompson();
-            thompson.expresion = expresion;
-
+            AFN afn = thompson.compilar(expresion);
+            Console.WriteLine("AFN:");
+            afn.mostrar();
+            Console.ReadKey();
         }
     }
 }

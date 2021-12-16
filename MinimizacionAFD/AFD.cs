@@ -12,7 +12,7 @@ namespace MinimizacionAFD
         List<Transiciones> automata = new List<Transiciones>();
         public AFD()
         {
-            
+       
         }
 
     }
